@@ -25,17 +25,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
       - name: Install dependencies
-        run: yarn install --immutable
+        run: npm ci
       - name: Build project
-        run: yarn build
+        run: npm run build
 
       - name: Lint project
-        run: yarn lint:all
+        run: npm run lint && npm run lint:langgraph-json
 
       - name: Check README spelling
         uses: codespell-project/actions-codespell@v2
@@ -50,4 +51,4 @@ jobs:
           path: src/
 
       - name: Run tests
-        run: yarn test
+        run: npm test

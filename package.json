@@ -17,8 +17,8 @@
     "lint": "eslint src",
     "format:check": "prettier --check .",
     "lint:langgraph-json": "node scripts/checkLanggraphPaths.js",
-    "lint:all": "yarn lint & yarn lint:langgraph-json & yarn format:check",
-    "test:all": "yarn test && yarn test:int && yarn lint:langgraph"
+    "lint:all": "npm run lint && npm run lint:langgraph-json && npm run format:check",
+    "test:all": "npm run test && npm run test:int && npm run lint:all"
   },
   "dependencies": {
     "@langchain/anthropic": "^0.3.0",
