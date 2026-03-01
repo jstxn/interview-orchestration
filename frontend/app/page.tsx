@@ -105,9 +105,9 @@ export default function InterviewPage() {
               {/* Logo */}
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">U</span>
+                  <span className="text-white font-bold text-sm">IO</span>
                 </div>
-                <span className="font-semibold text-lg">Upwage</span>
+                <span className="font-semibold text-lg">Interview Orchestration</span>
               </div>
 
               {/* Right side */}

@@ -1,6 +1,6 @@
 # Interview Orchestration - Planning Document
 
-> Based on Upwage Turn-by-Turn Overview (Dec 2, 2025) + Wireframe
+> Based on Turn-by-Turn Overview (Dec 2, 2025) + Wireframe
 
 ## Business Context
 
